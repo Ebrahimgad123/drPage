@@ -1,9 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  i18n: {
-    locales: ['ar', 'en'],
-    defaultLocale: 'ar',
-  },
+  typedRoutes: true, 
   images: {
     remotePatterns: [
       {
@@ -12,9 +9,6 @@ const nextConfig = {
       },
     ],
     unoptimized: true,
-  },
-  eslint: {
-    ignoreDuringBuilds: true,
   },
   typescript: {
     ignoreBuildErrors: true,
